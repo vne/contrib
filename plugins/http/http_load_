@@ -25,6 +25,8 @@ This version supports monitoring:
    server(s) you are going to monitor.
  - Some perl modules: 
    Time::HiRes, LWP::UserAgent, HTML::LinkExtor, LWP::ConnCache
+   Make sure to install LWP::Protocol::https if HTTPS links are to be monitored. Without
+   this module the plugin will report HTTP 501 for HTTPS links without even trying to access them.
 
 =head1 CONFIGURATION
 
